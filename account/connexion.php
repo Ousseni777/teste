@@ -28,7 +28,7 @@ if (isset($_POST['email'], $_POST['password1'])) {
                 $sql_update = "UPDATE online 
                                 SET times=$current_times,  
                                 times=$current_times
-                                WHERE user_ip=$user_ip";
+                                WHERE email=$email";
                 $request_update = mysqli_query($bdd, $sql_update);
             } else {
                 $sql_insert = "INSERT INTO online(user_ip,times,email,status)
