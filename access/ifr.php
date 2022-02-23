@@ -214,7 +214,7 @@ height: 0px;
             <div class="option"><a href="" target="tg"><i class="options fas fa-question-circle fa-1x" id="i12"></i><span>How It works ?</span></a></div>
             <div class="option"><a href="" target="tg"><i class="options fas fa-guilded fa-1x" id="i13"></i><span>User guides</span></a></div>
             <div class="option"><a href="" target="tg"><i class="options fas fa-paper-plane fa-1x" id="i14"></i><span>Contact Us</span></a></div>
-            <div class="option"><a target="tg" href="./zoom/CDN/setting.php" target="page"><i class="options fas fa-desktop fa-1x" id="i15"></i><span>Set Meeting</span></a></div>
+            <div class="option"><a target="tg" href="../zoom/CDN/setting.php" target="page"><i class="options fas fa-desktop fa-1x" id="i15"></i><span>Set Meeting</span></a></div>
             <div class="option"><a id="logout" href="./logout.php"><i class="options fas fa-sign-out-alt fa-1x" id="i16"></i><span>Logout</span></a></div>
         </div>
     </div>
