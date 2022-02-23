@@ -18,17 +18,17 @@ if (isset($_POST['email'], $_POST['password1'])) {
             $_SESSION['last_name'] = $table['last_name'];
 
             $current_times = date('U');
-            // $user_ip = "$_SERVER['REMOTE_ADDR']";
-            $user_ip = "xxxxx122";
+            $user_ip = "$_SERVER['REMOTE_ADDR']";
+            // $user_ip = "xxxxx122";
             // $sql = "SELECT * FROM online WHERE user_ip='$user_ip'";
-            $sql = "SELECT * FROM online WHERE email='$email'";
+            $sql = "SELECT * FROM online WHERE user_ip='$user_ip'";
             $request = mysqli_query($bdd, $sql);
             $table = mysqli_fetch_assoc($request);
             if ($table) {
                 $sql_update = "UPDATE online 
                                 SET times=$current_times,  
                                 times=$current_times
-                                WHERE email='$email'";
+                                WHERE user_ip='$user_ip'";
                 $request_update = mysqli_query($bdd, $sql_update);
             } else {
                 $sql_insert = "INSERT INTO online(user_ip,times,email,status)
